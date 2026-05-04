@@ -13,5 +13,5 @@ sudo mv kops /usr/local/bin/kops
 chmod +x kubectl
 mv kubectl /usr/local/bin/kubectl
 export KOPS_STATE_STORE=s3://ramya.ch.k8s
-kops create cluster --name ramya.k8s.local --cloud=aws --zones eu-north-1c,eu-north-1b,eu-north-1a --control-plane-size t3.small --control-plane-count 1 --control-plane-volume-size 30 --node-size t3.small --node-count 2 --node-volume-size 20
+kops create cluster --name ramya.k8s.local --cloud=aws --zones eu-north-1c,eu-north-1b,eu-north-1a --control-plane-size t3.small --control-plane-count 1 --control-plane-volume-size 30 --node-size t3.micro --node-count 2 --node-volume-size 20
 kops update cluster --name ramya.k8s.local --yes --admin
