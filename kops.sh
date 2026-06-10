@@ -1,6 +1,6 @@
-vim .bashrc
-export PATH=$PATH:/usr/local/bin/
-source .bashrc
+#vim .bashrc
+#export PATH=$PATH:/usr/local/bin/
+#source .bashrc
 
 #! /bin/bash
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
